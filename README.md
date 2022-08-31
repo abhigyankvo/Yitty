@@ -2,7 +2,7 @@
 
 > Node v16.16.0
 
-> NPM v8.11.0
+> Yarn v1.22.19
 
 # Steps to build and test this add-on on local machine
 
