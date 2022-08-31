@@ -1,24 +1,23 @@
 {
-  "name": "My Extenstion",
-  "description": "React Extenstion",
-  "version": "1.0",
-  "manifest_version": 3,
-  "action": {
-      "default_popup": "index.html",
-      "default_title": "YTDL"
-  },
-  "icons": {
+  "name": "Yitty",
+  "description": "YouTube Downloader",
+  "version": "2.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": {
       "16": "logo192.png",
       "48": "logo192.png",
       "128": "logo192.png"
+    },
+    "default_popup": "index.html",
+    "default_title": "YTDL"
   },
-  "permissions": [
-    "activeTab"
- ],
- "content_scripts": [
-  {
+
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
       "matches": ["http://*/*", "https://*/*"],
       "js": ["./static/js/content.js"]
-  }
-]
+    }
+  ]
 }
